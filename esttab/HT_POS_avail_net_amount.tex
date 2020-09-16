@@ -1,0 +1,30 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{3}{c}{Net amount received in last year (PKR)}       \\\cmidrule(lr){2-4}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\midrule
+BVS=1 $\times$ post=1&    -292.329         &    -236.187         &    -101.316         \\
+                    &   (551.745)         &   (503.830)         &   (534.643)         \\
+\addlinespace
+BVS=1 $\times$ Retail agent in PSU=1 $\times$ post=1&     491.009         &     259.228         &     109.728         \\
+                    &   (635.062)         &   (540.495)         &   (567.362)         \\
+\addlinespace
+\hline (BVS $\times$ post)+(BVS $\times$  post $\times$ Retail agent in PSU)&     198.680         &      23.042         &       8.412         \\
+                    &   (417.383)         &   (324.651)         &   (347.962)         \\
+\midrule
+Observations        &        7864         &        7714         &        7763         \\
+\(R^{2}\)           &       0.399         &       0.409         &       0.624         \\
+Control mean        &   11575.323         &   11575.323         &   11575.323         \\
+Survey year fixed effects&           x         &                     &                     \\
+District fixed effects&           x         &           x         &                     \\
+Control for beneficiary years of education&                     &           x         &                     \\
+Province $\times$  year FE&                     &           x         &           x         \\
+Household fixed effects&                     &                     &           x         \\
+Proportion of observations in HT group&       0.713         &       0.713         &       0.713         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Robust standard errors clustered at the district level.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

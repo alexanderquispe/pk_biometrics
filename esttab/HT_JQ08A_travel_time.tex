@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{c}}
+\toprule
+                    &\multicolumn{1}{c}{Travel time to payment point (minutes)}\\
+\midrule
+BVS=1 $\times$ post=1&     -20.756         \\
+                    &    (35.093)         \\
+\addlinespace
+BVS=1 $\times$ Above med. travel time=1 $\times$ post=1&     -40.283         \\
+                    &    (62.255)         \\
+\addlinespace
+\hline (BVS $\times$ post)+(BVS $\times$  post $\times$ Above med. travel time)&     -61.039         \\
+                    &    (40.042)         \\
+\midrule
+Observations        &        7850         \\
+\(R^{2}\)           &       0.301         \\
+Control mean        &     101.632         \\
+Province $\times$  year FE&           x         \\
+Household fixed effects&           x         \\
+Proportion of observations in HT group&       0.442         \\
+\bottomrule
+\multicolumn{2}{l}{\footnotesize Robust standard errors clustered at the district level}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

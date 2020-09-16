@@ -1,0 +1,39 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                    &\multicolumn{3}{c}{Votes in elections}                           &\multicolumn{3}{c}{\shortstack{Paid employment\\outside the house}}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         \\
+                    &   \vspace{-.04cm}         &   \vspace{-.04cm}         &   \vspace{-.04cm}         &   \vspace{-.04cm}         &   \vspace{-.04cm}         &   \vspace{-.04cm}         \\
+\midrule
+BVS=1 $\times$ post=1&       0.085\sym{*}  &       0.031         &       0.035         &      -0.075         &      -0.036         &      -0.027         \\
+                    &     (0.049)         &     (0.034)         &     (0.034)         &     (0.070)         &     (0.069)         &     (0.064)         \\
+                    &     [0.203]         &     [1.000]         &     [1.000]         &     [0.203]         &     [1.000]         &     [1.000]         \\
+Used ATM at baseline&       0.004         &       0.015         &                     &      -0.035         &      -0.042         &                     \\
+                    &     (0.021)         &     (0.022)         &                     &     (0.049)         &     (0.051)         &                     \\
+                    &     [1.000]         &     [0.998]         &                     &     [1.000]         &     [0.998]         &                     \\
+post=1 $\times$ Used ATM at baseline=1&       0.029         &      -0.011         &      -0.011         &      -0.073         &      -0.054         &      -0.027         \\
+                    &     (0.047)         &     (0.040)         &     (0.042)         &     (0.083)         &     (0.085)         &     (0.093)         \\
+                    &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         \\
+BVS=1 $\times$ Used ATM at baseline=1&       0.003         &      -0.018         &                     &       0.104         &       0.115\sym{*}  &                     \\
+                    &     (0.026)         &     (0.026)         &                     &     (0.063)         &     (0.067)         &                     \\
+                    &     [0.849]         &     [0.330]         &                     &     [0.266]         &     [0.231]         &                     \\
+BVS=1 $\times$ Used ATM at baseline=1 $\times$ post=1&      -0.063         &      -0.004         &      -0.014         &       0.007         &      -0.006         &      -0.028         \\
+                    &     (0.056)         &     (0.050)         &     (0.052)         &     (0.117)         &     (0.115)         &     (0.119)         \\
+                    &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         \\
+\hline (BVS $\times$ post)+(BVS $\times$  post $\times$ Used ATM at baseline)&       0.022         &       0.027         &       0.021         &      -0.068         &      -0.041         &      -0.054         \\
+                    &     (0.053)         &     (0.049)         &     (0.051)         &     (0.113)         &     (0.100)         &     (0.108)         \\
+                    &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         &     [1.000]         \\
+\midrule
+Observations        &        8434         &        8271         &        8432         &        8513         &        8348         &        8513         \\
+\(R^{2}\)           &       0.386         &       0.406         &       0.627         &       0.128         &       0.142         &       0.589         \\
+Control mean        &       0.677         &       0.677         &       0.677         &     -0.0317         &     -0.0317         &     -0.0317         \\
+District fixed effects&           x         &           x         &                     &           x         &           x         &                     \\
+Survey year fixed effects&           x         &           x         &           x         &           x         &           x         &           x         \\
+Control for beneficiary years of education&                     &           x         &                     &                     &           x         &                     \\
+Province $\times$  year FE&                     &           x         &           x         &                     &           x         &           x         \\
+Household fixed effects&                     &                     &           x         &                     &                     &           x         \\
+Proportion of observations in HT group&       0.200         &       0.200         &       0.200         &       0.200         &       0.200         &       0.200         \\
+\bottomrule
+\end{tabular}
+}

@@ -1,0 +1,18 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Admin data: HH used BVS}&\multicolumn{1}{c}{Survey data: HH used BVS}\\
+\midrule
+District transitioned to BVS&       0.825\sym{***}&       0.710\sym{***}\\
+                    &     (0.095)         &     (0.083)         \\
+\midrule
+Observations        &        2397         &        2818         \\
+\(R^{2}\)           &       0.722         &       0.479         \\
+Province fixed effects&           x         &           x         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Robust standard errors clustered at the district level}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

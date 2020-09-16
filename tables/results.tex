@@ -1,0 +1,104 @@
+\begin{table}[H] \begin{center} \protect \caption{\label{tab:NewResults} New Results : RANK IMPROVEMENT OF FEMALE CANDIDATES}
+\noindent\resizebox{\textwidth}{!}{ \begin{threeparttable}
+\begin{tabular}{lcccccc}
+\hline
+\hline
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\hline
+RD\_Estimate         &       3.387***&       3.318** &       3.283***&       4.503***&       3.586***&       4.239***\\
+                    &     (1.304)   &     (1.517)   &     (0.509)   &     (0.398)   &     (0.469)   &     (0.452)   \\
+\midrule
+Bandwidth type      &         MSE   &         CER   &         MSE   &         CER   &         MSE   &         CER   \\
+Bandwidth size      &      12.365   &       9.651   &      10.793   &       8.427   &        9.49   &        7.41   \\
+Polynomial          &      Linear   &      Linear   &      Linear   &      Linear   &      Linear   &      Linear   \\
+N left              &         942   &         714   &         794   &         683   &         714   &         655   \\
+N rigth             &        1261   &        1053   &        1148   &         932   &        1049   &         868   \\
+95\% Conf. Interval &[.103 ; 6.307]   &[-.002 ; 6.505]   &[2.382 ; 4.688]   &[3.878 ; 5.705]   &[2.732 ; 4.766]   &[3.386 ; 5.39]   \\
+Elections           &          56   &          45   &          51   &          40   &          45   &          37   \\
+Mean (SD)           &0.64 (10.59)   &0.75 (10.65)   &0.67 (10.83)   &0.91 (10.76)   &0.75 (10.65)   &0.91 (10.63)   \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\begin{small}
+\item[1]
+The
+treatment
+variable
+is
+a
+dummy
+that
+is
+1
+if
+the
+margin
+of
+victory
+of
+the
+female
+candidate
+in
+the
+last
+mixed-gender
+mayor
+election
+was
+positive.
+\item[2]
+We
+report
+local
+linear
+(Model
+1
+to
+6)
+regressions
+for
+various
+bandwidths:
+optimal
+MSE
+(Model
+1,
+3,
+5),
+optimal
+CER
+(Model
+2,
+4,
+6).
+The
+first
+two
+models
+report
+regressions
+without
+covariates
+while
+the
+last
+four
+with
+covariates.
+\item[3]
+Models
+5
+and
+6
+show
+regressions
+excluding
+covariate
+log of share of employees in the manufacturing among employee
+after
+using
+Lasso
+Estimation.
+\end{small}
+\end{tablenotes} \end{threeparttable} } \end{center} \end{table}

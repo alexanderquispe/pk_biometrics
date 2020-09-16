@@ -1,0 +1,20 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\caption{Bandwidth Selection:Female mayoral candidate margin of victory.}
+\label{tab:my-table3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+ &  &  & \multicolumn{2}{l}{\textbf{Without Covariates} } & \multicolumn{2}{l}{\textbf{With Covariates}} \\ \midrule
+\multicolumn{1}{c}{\textbf{Method}} & \multicolumn{1}{c}{BW est. $h$} & \multicolumn{1}{c}{\textbf{Method}} & \multicolumn{2}{c}{BW est. $h$} & \multicolumn{2}{c}{BW est. $h$} \\
+ &  &  & Left of c & Right of c & Left of c & Right of c \\
+\textbf{CCT} & 20.10061 & \textbf{MSE} & 12.365 & 12.365 & 9.490 & 9.490 \\
+\textbf{IK} & 35.58665 & \textbf{MSE-two} & 21.469 & 11.307 & 11.081 & 9.829 \\
+CV & 25.92 & \textbf{CER} & 9.651 & 9.651 & 7.410 & 7.410 \\
+ &  & \textbf{CER-two} & 16.757 & 8.826 & 8.652 & 7.674 \\ \bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{\shortstack{Gross amount received\\in the past year}}&\multicolumn{1}{c}{\shortstack{Total side payments\\in the past year}}\\
+\midrule
+BVS=1 $\times$ post=1&     763.776\sym{*}  &     315.553\sym{***}\\
+                    &   (423.658)         &    (71.234)         \\
+\addlinespace
+BVS=1 $\times$ Above med. travel time=1 $\times$ post=1&    -614.004         &    -136.895\sym{**} \\
+                    &   (553.704)         &    (57.630)         \\
+\addlinespace
+\hline (BVS $\times$ post)+(BVS $\times$  post $\times$ Above med. travel time)&     149.771         &     178.658\sym{***}\\
+                    &   (415.549)         &    (65.260)         \\
+\midrule
+Observations        &        8382         &        8141         \\
+\(R^{2}\)           &       0.606         &       0.467         \\
+Control mean        &   11651.737         &     201.283         \\
+Province $\times$  year FE&           x         &           x         \\
+Household fixed effects&           x         &           x         \\
+Proportion of observations in HT group&       0.442         &       0.442         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Robust standard errors clustered at the district level}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

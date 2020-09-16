@@ -1,0 +1,24 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\caption{Manipulation Testing, Female mayoral candidate margin of victory.}
+\label{tab:my-table}
+\scalebox{0.7}{
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\multirow{2}{*}{} & \multicolumn{2}{c}{Bandwidths} & \multicolumn{2}{c}{Eff. n} & \multicolumn{2}{c}{Test} \\ \cmidrule(l){2-7} 
+ & left & right & left & right & T & p-val \\ \midrule
+\multicolumn{7}{l}{$h_- \neq h_+$} \\ \midrule
+$T_2(\widehat h_1)$ & 1.327349 & 5.208931 & 1004 & 91 & 14.31532 & 0 \\ \midrule
+$T_3(\widehat h_2)$ & 11.82486 & 15.15077 & 4652 & 3205 & -5.578066 & 0 \\ \midrule
+$T_4(\widehat h_3)$ & 19.21086 & 12.43934 & 4071 & 4544 & .1895885 & .8496316 \\ \midrule
+\multicolumn{7}{l}{$h_- =  h_+$} \\ \midrule
+$T_2(\widehat h_1)$ & 1.608613 & 1.608613 & 322 & 209 & .6670859 & .5047172 \\ \midrule
+$T_3(\widehat h_2)$ & 17.0946 & 17.0946 & 4851 & 3772 & -5.484069 & 0 \\ \midrule
+$T_4(\widehat h_3)$ & 13.09338 & 13.09338 & 4312 & 3461 & -17.52861 & 0 \\ \bottomrule
+\end{tabular}
+}
+\end{table}

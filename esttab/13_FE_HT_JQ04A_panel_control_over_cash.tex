@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{c}}
+\toprule
+                    &\multicolumn{1}{c}{Respondent decides use of BISP cash}\\
+\midrule
+BVS=1 $\times$ Post=1&       0.006         \\
+                    &     (0.033)         \\
+\addlinespace
+BVS=1 $\times$ Didn't collect herself=1 $\times$ Post=1&       0.093\sym{*}  \\
+                    &     (0.052)         \\
+\addlinespace
+\hline (BVS $\times$ post)+(BVS $\times$  post $\times$ Didn't collect herself)&       0.099\sym{**} \\
+                    &     (0.039)         \\
+\midrule
+Observations        &        8537         \\
+\(R^{2}\)           &       0.430         \\
+Control mean        &       0.685         \\
+Province $\times$  year FE&           x         \\
+Household fixed effects&           x         \\
+Proportion of observations in HT group&       0.744         \\
+\bottomrule
+\multicolumn{2}{l}{\footnotesize Robust standard errors clustered at the district level}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

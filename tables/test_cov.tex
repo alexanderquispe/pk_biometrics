@@ -1,0 +1,24 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\caption{Regression of covariates and running variable}
+\label{tab:my-table2}
+\scalebox{0.7}{
+\begin{tabular}{@{}lll@{}}
+\toprule
+Covariates & RD Effect & Robust p-val \\ \midrule
+Log of municipality population. & 1.232 & .108 \\
+Log of municipality area. & .54 & .195 \\
+Log of municipality public debt per capita. & .586 & .09 \\
+Log of tax revenues per capita. & .249 & .29 \\
+Log of local government employees per capita. & .201 & .431 \\
+Log of share of women among local government employees. & .134 & .082 \\
+Log of total employment per capita in a municipality. & .293 & .314 \\
+Log of share of women among all employees. & .046 & .294 \\
+Log of share of employees in manufacturing among all employees. & -.302 & .06 \\
+Log of share of women among all employees in manufacturing. & -.109 & .139 \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
